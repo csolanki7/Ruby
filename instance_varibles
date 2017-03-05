@@ -1,0 +1,31 @@
+#!/usr/bin/ruby
+
+class Student
+   def initialize(id, name, addr)
+      @stud_id=id
+      @stud_name=name
+      @stud_addr=addr
+   end
+   def display_details()
+      puts "Student id #@stud_id"
+      puts "Student name #@stud_name"
+      puts "Student address #@stud_addr"
+    end
+end
+
+# Create Objects
+stu1=Student.new("1", "chirag", "Wisdom Apartments, CA")
+stu2=Student.new("2", "solanki", "New Empire road, CA")
+
+# Call Methods
+stu1.display_details()
+stu2.display_details()
+
+
+output :
+Student id 1
+Student name chirag
+Student address Wisdom Apartments, CA
+Student id 2
+Student name solanki
+Student address New Empire road, CA
